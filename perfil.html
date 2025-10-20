@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendix - Perfil</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-dark text-white">
+    <div class="container-fluid p-0">
+        <header class="p-3 text-center">
+            <div class="d-flex align-items-center justify-content-center">
+                <h5 class="mb-0 fw-bold text-primary" aria-expanded="false">
+                    Plantilla App Fitness Mobile
+                </h5>
+                
+            </div>
+        </header>
+        <main class="p-3 pb-5">
+            <div class="card bg-secondary mb-4 p-3">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-crown text-warning me-2 fa-lg"></i>
+                    <h6 class="mb-0 ">Rendix Premium</h6>
+                </div>
+                <p class="text-info small mb-3">Desbloquea entrenamientos avanzados y resultados optimizados</p>
+
+                <div class="row g-2 text-center mb-3">
+                    <div class="col-6">
+                        <div class="card bg-dark p-2">
+                            <i class="fas fa-bullseye text-primary mb-1"></i>
+                            <small class="text-white">Planes Personalizados</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark p-2">
+                            <i class="fas fa-book-open text-info mb-1"></i>
+                            <small class="text-white">Explicaciones Detalladas</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark p-2">
+                            <i class="fas fa-chart-area text-success mb-1"></i>
+                            <small class="text-white">Análisis Avanzado</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark p-2">
+                            <i class="fas fa-bolt text-danger mb-1"></i>
+                            <small class="text-white">Resultados Optimizados</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-3">
+                    <p class="mb-1">Precio</p>
+                    <h4 class="fw-bold">$6.500 COP</h4>
+                    <small class="text-ligth">por mes</small>
+                </div>
+                <button class="btn btn-primary btn-lg d-flex align-items-center justify-content-center w-100">
+                    <i class="fas fa-star me-2"></i> Suscribirse a Premium
+                </button>
+            </div>
+
+            <!-- Rendiz Premium Activo -->
+            <div class="card bg-secondary mb-4 p-3 d-none" id="rendixPremiumActivo">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-crown text-warning me-2 fa-lg"></i>
+                        <h6 class="mb-0">Rendix Premium</h6>
+                    </div>
+                    <span class="badge bg-success">Activo</span>
+                </div>
+                <p class="text-muted small mb-3">Estás disfrutando de todos los beneficios premium</p>
+
+                <div class="row g-2 text-center mb-3">
+                    <div class="col-6">
+                        <div class="card bg-dark p-2">
+                            <i class="fas fa-bullseye text-primary mb-1"></i>
+                            <small>Planes Personalizados</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark p-2">
+                            <i class="fas fa-book-open text-info mb-1"></i>
+                            <small>Explicaciones Detalladas</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark p-2">
+                            <i class="fas fa-chart-area text-success mb-1"></i>
+                            <small>Análisis Avanzado</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark p-2">
+                            <i class="fas fa-bolt text-danger mb-1"></i>
+                            <small>Resultados Optimizados</small>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-outline-danger btn-lg w-100">Cancelar suscripción</button>
+            </div>
+
+            <div class="card bg-secondary mb-4 p-3">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-fire text-danger me-2 fa-lg"></i>
+                        <h6 class="mb-0">Racha de Entrenamiento</h6>
+                    </div>
+                    <span class="badge bg-danger">Dedicado</span>
+                </div>
+                <div class="text-center mb-3">
+                    <p class="mb-1">Mantén tu racha activa entrenando cada día</p>
+                    <h3 class="fw-bold text-danger">17 <small class="text-white-50">días seguidos</small></h3>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <small>Próximo premio</small>
+                        <small>3 días</small>
+                    </div>
+                    <div class="progress bg-dark" style="height: 8px;">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-gift text-primary me-2"></i>
+                    <small class="mb-0">Premio por racha</small>
+                </div>
+                <p class="text-info small mb-3">Cada 10 días de racha obtienes 3 días gratis de Premium</p>
+                <div class="row g-2 text-center">
+                    <div class="col-6">
+                        <div class="card bg-dark p-2">
+                            <small class="mb-0 fw-bold text-white">1</small>
+                            <small class="text-white">Premios obtenidos</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark p-2">
+                            <small class="mb-0 fw-bold text-white">3</small>
+                            <small class="text-white">Días gratis ganados</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-secondary mb-4 p-3">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-crown text-warning me-2 fa-lg"></i>
+                        <h6 class="mb-0">Planes Premium</h6>
+                    </div>
+                    <span class="badge bg-primary">Premium</span>
+                </div>
+                <p class="text-info small mb-3">Planes de entrenamiento avanzados con seguimiento detallado</p>
+                <div class="row g-2 text-center">
+                    <div class="col-6">
+                        <div class="card bg-dark p-2">
+                            <i class="fas fa-dumbbell text-primary mb-1"></i>
+                            <small class="mb-0 text-white">Domina 10 ejercicios de fuerza</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark p-2">
+                            <i class="fas fa-heartbeat text-danger mb-1"></i>
+                            <small class="mb-0 text-white">50 sesiones de cardio completadas</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-secondary mb-4 p-3">
+                <h6>Preferencias de Entrenamiento</h6>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item bg-dark d-flex justify-content-between align-items-center mb-2 rounded">
+                        <small class="text-white">Tipo favorito</small>
+                        <span class="fw-bold text-white">Calistenia</span>
+                    </li>
+                    <li class="list-group-item bg-dark d-flex justify-content-between align-items-center mb-2 rounded">
+                        <small class="text-white">Duración preferida</small>
+                        <span class="fw-bold text-white">45 minutos</span>
+                    </li>
+                    <li class="list-group-item bg-dark d-flex justify-content-between align-items-center mb-2 rounded">
+                        <small class="text-white">Horario favorito</small>
+                        <span class="fw-bold text-white">Mañana</span>
+                    </li>
+                    <li class="list-group-item bg-dark d-flex justify-content-between align-items-center mb-2 rounded">
+                        <small class="text-white">Nivel actual</small>
+                        <span class="fw-bold text-white">Intermedio</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card bg-secondary mb-4 p-3">
+                <h6>Panel de Prueba</h6>
+                <p class="text-info small">Controles para demostrar la funcionalidad</p>
+                <div class="d-grid gap-2 mb-3">
+                    <button class="btn btn-outline-info" id="addRachaBtn">+1 Día Racha</button>
+                    <button class="btn btn-outline-danger" id="resetRachaBtn">Reset Racha</button>
+                    <button class="btn btn-outline-success" id="simulatePremiumBtn">Simular 10 días (Activar premio)</button>
+                </div>
+            </div>
+
+            <div class="d-grid gap-2 mb-5">
+                <button class="btn btn-outline-light d-flex align-items-center justify-content-center">
+                    <i class="fas fa-cog me-2"></i> Configuración
+                </button>
+                <button class="btn btn-outline-light d-flex align-items-center justify-content-center">
+                    <i class="fas fa-bullseye me-2"></i> Establecer Objetivos
+                </button>
+                <button class="btn btn-outline-light d-flex align-items-center justify-content-center">
+                    <i class="fas fa-history me-2"></i> Historial de Entrenamientos
+                </button>
+                <button class="btn btn-outline-light d-flex align-items-center justify-content-center">
+                    <i class="fas fa-headset me-2"></i> Contacto y Soporte
+                </button>
+                <button class="btn btn-outline-light d-flex align-items-center justify-content-center">
+                    <i class="fas fa-question-circle me-2"></i> Ayuda y FAQ
+                </button>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Navbar Inferior (para móvil) -->
+    <nav class="navbar navbar-expand fixed-bottom navbar-dark bg-dark d-md-none">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav-justified w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home d-block mb-1"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="objetivos.html"><i class="fas fa-bullseye d-block mb-1"></i> Objetivos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progreso.html"><i class="fas fa-chart-line d-block mb-1"></i> Progreso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deportes.html"><i class="fas fa-running d-block mb-1"></i> Deportes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="perfil.html"><i class="fas fa-user d-block mb-1"></i> Perfil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS y dependencias (Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

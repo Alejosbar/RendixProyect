@@ -1,0 +1,184 @@
+body {
+    background-color: #002642; /* Color de fondo actualizado a la petición del usuario */
+    color: #e0e0e0; /* Color de texto claro */
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    overflow: hidden; /* Evita el scroll global, el scroll será controlado por JS */
+}
+
+.main-container {
+    background-image: url('img/senatic2.jpg'); /* Cambia la ruta por la de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0px;
+    color: #81b6f3; /* Azul más vibrante */
+}
+
+.project-subtitle {
+    font-size: 1.2rem;
+    color: #ffffff;
+}   
+
+/* Estilos para las tarjetas de contenido */
+.canvas-step {
+    min-height: 250px; /* Altura mínima para que la tarjeta sea visible */
+    display: none; /* Oculto por defecto, JS lo mostrará */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(20px);
+    padding: 20px;
+}
+
+.canvas-step.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.canvas-card {
+    background-color: rgba(0, 38, 66, 0.90); /* Color de fondo base */
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Textura sutil de fondo */
+    background-blend-mode: overlay; /* Mezcla la imagen con el color de fondo */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 900px; /* Ancho máximo para una tarjeta centrada */
+    margin: 0 auto; /* Centrar tarjeta */
+    text-align: center;
+    position: relative; /* Para posibles efectos */
+    min-height: 450px; /* Asegura un tamaño mínimo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.canvas-card h4 {
+    color: #5bc0de; /* Un azul claro para los títulos de las tarjetas */
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.canvas-card p {
+    color: #c0c0c0;
+    font-size: 1rem;
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: #4a90e2;
+}
+
+/* Estilos para los botones de navegación */
+.navigation-controls .btn-primary {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.navigation-controls .btn-primary:hover {
+    background-color: #357ABD;
+    border-color: #357ABD;
+    transform: translateY(-2px);
+}
+
+.navigation-controls .btn-outline-light {
+    border-color: #888;
+    color: #888;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.navigation-controls .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.navigation-controls .btn-secondary {
+    background-color: #555;
+    border-color: #555;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.navigation-controls .btn-secondary:hover {
+    background-color: #444;
+    border-color: #444;
+    transform: translateY(-2px);
+}
+
+.start-button {
+    padding: 15px 35px;
+    font-size: 1.3rem;
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #357ABD;
+    border-color: #357ABD;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Indicadores de progreso (puntos) */
+#progress-indicators {
+    display: flex;
+    gap: 10px;
+}
+
+.progress-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #666;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.progress-dot.active {
+    background-color: #4a90e2;
+    transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 2.2rem;
+    }
+    .project-subtitle {
+        font-size: 1rem;
+    }
+    .canvas-card {
+        padding: 20px;
+        min-height: auto;
+    }
+    .canvas-card h4 {
+        font-size: 1.3rem;
+    }
+    .canvas-card p {
+        font-size: 0.9rem;
+    }
+    .navigation-controls button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .start-button {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+}

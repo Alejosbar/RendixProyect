@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendix - Deportes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-dark text-white">
+    <div class="container-fluid p-0">
+        <header class="p-3 text-center">
+            <div class="d-flex align-items-center justify-content-center">
+                <h5 class="mb-0 fw-bold text-primary " data-bs-toggle="dropdown" aria-expanded="false">
+                    Plantilla App Fitness Mobile
+                </h5>
+                
+            </div>
+        </header>
+        <main class="p-3 pb-5">
+            <h5 style="text-align: center;" class="mb-3">Tipos de Deportes</h5>
+            <p style="text-align: center;" class="text-info mb-4">Elige tu tipo de entrenamiento favorito</p>
+
+            <div class="card bg-secondary text-white mb-4 sport-card" data-sport="calistenia">
+                <div class="position-relative">
+                    
+                    <button class="btn btn-dark rounded-circle position-absolute end-0 top-50 translate-middle-y me-2 d-flex align-items-center justify-content-center btn-circle-sm">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 style="text-align: center;"  class="card-title">Calistenia</h5>
+                    <section style="text-align: center;">
+                    <img  style="width: 200px; height: 250px;" src="img/file_000000004bc8620e877cd167a9b9f932.png" alt="">
+                    </section>
+                    <p  style="text-align: center;" class="card-text text-info">Ejercicios con peso corporal</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="text-center">
+                            <i class="fas fa-dumbbell text-primary mb-1"></i>
+                            <p class="mb-0 small">Ejercicios</p>
+                            <p class="mb-0 fw-bold">12</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-clock text-info mb-1"></i>
+                            <p class="mb-0 small">Duración</p>
+                            <p class="mb-0 fw-bold">20-60 min</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-chart-bar text-warning mb-1"></i>
+                            <p class="mb-0 small">Nivel</p>
+                            <p class="mb-0 fw-bold">Principiante - Avanzado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-secondary text-white mb-4 sport-card" data-sport="cardio">
+                <div class="position-relative">
+                    <img src="https://via.placeholder.com/400x250?text=Cardio" class="card-img-top rounded-top" alt="Cardio">
+                    <button class="btn btn-dark rounded-circle position-absolute end-0 top-50 translate-middle-y me-2 d-flex align-items-center justify-content-center btn-circle-sm">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 style="text-align: center;" class="card-title">Cardio</h5>
+                    <section style="text-align: center;">
+                        <img style="width: 200px; height: 250px;" src="img/file_000000008a3c61f5b7675c72916014fc.png" alt="">
+                    </section>
+                    <p style="text-align: center;" class="card-text text-info">Ejercicios cardiovasculares</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="text-center">
+                            <i class="fas fa-running text-primary mb-1"></i>
+                            <p class="mb-0 small">Ejercicios</p>
+                            <p class="mb-0 fw-bold">10</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-clock text-info mb-1"></i>
+                            <p class="mb-0 small">Duración</p>
+                            <p class="mb-0 fw-bold">30-90 min</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-chart-bar text-warning mb-1"></i>
+                            <p class="mb-0 small">Nivel</p>
+                            <p class="mb-0 fw-bold">Principiante - Intermedio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-secondary text-white mb-4 sport-card" data-sport="fuerza">
+                <div class="card-body">
+                    <h5 style="text-align: center;" class="card-title">Entrenamiento de Fuerza</h5>
+                    <section style="text-align: center;">
+                        <img style="width: 200px; height: 250px;" src="img/file_00000000746c61f5904355dd38c1e6b6.png" alt="">
+                    </section>
+                    <p style="text-align: center;" class="card-text text-info">Ejercicios con pesas y resistencia</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="text-center">
+                            <i class="fas fa-dumbbell text-primary mb-1"></i>
+                            <p class="mb-0 small">Ejercicios</p>
+                            <p class="mb-0 fw-bold">18</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-clock text-info mb-1"></i>
+                            <p class="mb-0 small">Duración</p>
+                            <p class="mb-0 fw-bold">30-90 min</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-chart-bar text-warning mb-1"></i>
+                            <p class="mb-0 small">Nivel</p>
+                            <p class="mb-0 fw-bold">Intermedio - Avanzado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-secondary mb-4 p-3">
+                <h6>Recomendado para Ti</h6>
+                <p class="text-ligth">Basado en tu experiencia y objetivos</p>
+                <ul class="list-unstyled mt-2">
+                    <li class="mb-2">
+                        <i class="fas fa-circle text-primary me-2 icon-sm"></i>
+                        <span class="fw-bold">Calistenia - Altamente recomendado</span>
+                        <p class="text-ligth  small mb-0 ms-4">Perfecto para principiantes que buscan tonificar</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-circle text-primary me-2 icon-sm"></i>
+                        <span class="fw-bold">Cardio - Buena opción</span>
+                        <p class="text-ligth small mb-0 ms-4">Ideal para mejorar resistencia cardiovascular</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card bg-secondary mb-4 p-3">
+                <h6>Consejos para Empezar</h6>
+                <ul class="list-unstyled mt-2">
+                    <li class="mb-2">
+                        <i class="fas fa-circle text-primary me-2 icon-sm"></i> Completa tu perfil en "Objetivos" para recomendaciones personalizadas
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-circle text-primary me-2 icon-sm"></i> Comienza con ejercicios básicos y aumenta gradualmente la rutina
+                    </li>
+                    <li>
+                        <i class="fas fa-circle text-primary me-2 icon-sm"></i> Mantén una rutina constante, mejor poco pero frecuente
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <!-- Navbar Inferior (para móvil) -->
+    <nav class="navbar navbar-expand fixed-bottom navbar-dark bg-dark d-md-none">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav-justified w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home d-block mb-1"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="objetivos.html"><i class="fas fa-bullseye d-block mb-1"></i> Objetivos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progreso.html"><i class="fas fa-chart-line d-block mb-1"></i> Progreso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="deportes.html"><i class="fas fa-running d-block mb-1"></i> Deportes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="perfil.html"><i class="fas fa-user d-block mb-1"></i> Perfil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sport Details Modal -->
+    <div class="modal fade" id="sportModal" tabindex="-1" aria-labelledby="sportModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sportModalLabel">Detalles del Deporte</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="sportModalBody">
+                    <!-- Content will be loaded here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y dependencias (Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

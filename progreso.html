@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendix - Progreso</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-dark text-white">
+    <div class="container-fluid p-0">
+        <header class="p-3 text-center">
+            <div class="d-flex align-items-center justify-content-center">
+                <i class="fas fa-chart-line text-primary me-2"></i>
+                <h5 class="mb-0 fw-bold text-primary">Progreso Esperado</h5>
+            </div>
+            <p class="text-ligth mb-0">Conoce los cambios que experimentarás según tu entrenamiento</p>
+        </header>
+        <main class="p-3 pb-5">
+            <ul class="nav nav-pills nav-justified mb-4 bg-secondary rounded p-1" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="calistenia-tab" data-bs-toggle="pill" data-bs-target="#progreso-calistenia" type="button" role="tab" aria-controls="progreso-calistenia" aria-selected="true"><i class="fas fa-running me-2"></i> Calistenia</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="cardio-tab" data-bs-toggle="pill" data-bs-target="#progreso-cardio" type="button" role="tab" aria-controls="progreso-cardio" aria-selected="false"><i class="fas fa-bicycle me-2"></i> Cardio</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="fuerza-tab" data-bs-toggle="pill" data-bs-target="#progreso-fuerza" type="button" role="tab" aria-controls="progreso-fuerza" aria-selected="false"><i class="fas fa-dumbbell me-2"></i> Fuerza</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="progreso-calistenia" role="tabpanel" aria-labelledby="calistenia-tab">
+                    <div class="card bg-secondary mb-4 p-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-yoga text-primary me-2 fa-lg"></i>
+                            <h6 class="mb-0">Calistenia</h6>
+                        </div>
+                        <p class="text-primary">Timeline de progreso y cambios esperados</p>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h6 class="mb-0">1-2 semanas</h6>
+                                <span class="badge bg-dark">1-2 semanas</span>
+                            </div>
+                            <p class="mb-1 fw-bold"><i class="fas fa-chart-line text-primary me-2"></i> Cambios Físicos</p>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Mejor coordinación y equilibrio</li>
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Ligera mejora en flexibilidad</li>
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Adaptación neural inicial</li>
+                            </ul>
+                            <p class="mb-1 fw-bold"><i class="fas fa-brain text-info me-2"></i> Cambios Psicológicos</p>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-circle text-info me-2 icon-sm"></i> Mayor confianza en movimientos básicos</li>
+                                <li><i class="fas fa-circle text-info me-2 icon-sm"></i> Sensación de logro personal</li>
+                                <li><i class="fas fa-circle text-info me-2 icon-sm"></i> Mejor conexión mente-cuerpo</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h6 class="mb-0">4-6 semanas</h6>
+                                <span class="badge bg-dark">4-6 semanas</span>
+                            </div>
+                            <p class="mb-1 fw-bold"><i class="fas fa-chart-line text-primary me-2"></i> Cambios Físicos</p>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Aumento notable en fuerza relativa</li>
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Mejor control corporal</li>
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Reducción del dolor muscular post-entrenamiento</li>
+                            </ul>
+                            <p class="mb-1 fw-bold"><i class="fas fa-brain text-info me-2"></i> Cambios Psicológicos</p>
+                            <ul class="list-unstyled small">
+<li><i class="fas fa-circle text-info me-2 icon-sm"></i> Mayor autoestima y confianza</li>
+<li><i class="fas fa-circle text-info me-2 icon-sm"></i> Reducción del estrés</li>
+<li><i class="fas fa-circle text-info me-2 icon-sm"></i> Mayor disciplina mental</li>
+                            </ul>
+                        </div>
+                        <!-- Más timelines de semanas aquí -->
+                    </div>
+                </div>
+
+                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" id="progreso-cardio" role="tabpanel" aria-labelledby="cardio-tab">
+                    <div class="card bg-secondary mb-4 p-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-yoga text-primary me-2 fa-lg"></i>
+                            <h6 class="mb-0">Cardio</h6>
+                        </div>
+                        <p class="text-primary">Timeline de progreso y cambios esperados</p>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h6 class="mb-0">1-2 semanas</h6>
+                                <span class="badge bg-dark">1-2 semanas</span>
+                            </div>
+                            <p class="mb-1 fw-bold"><i class="fas fa-chart-line text-primary me-2"></i> Cambios Físicos</p>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Ligera mejora en la resistencia respiratoria</li>
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Disminución de la fatiga durante actividades diarias</li>
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Adaptación cardiovascular inicial</li>
+                            </ul>
+                            <p class="mb-1 fw-bold"><i class="fas fa-brain text-info me-2"></i> Cambios Psicológicos</p>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-circle text-info me-2 icon-sm"></i> Aumento de la motivación por los primeros resultados</li>
+                                <li><i class="fas fa-circle text-info me-2 icon-sm"></i> Mejora el estado de ánimo por liberacion de endorfinas</li>
+                                <li><i class="fas fa-circle text-info me-2 icon-sm"></i> Disminución del estres</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h6 class="mb-0">4-6 semanas</h6>
+                                <span class="badge bg-dark">4-6 semanas</span>
+                            </div>
+                            <p class="mb-1 fw-bold"><i class="fas fa-chart-line text-primary me-2"></i> Cambios Físicos</p>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Mayor capacidad pulmonar y control de la respiración</li>
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Incremento en la energía general</li>
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Reducción de grasa corporal inicial</li>
+                            </ul>
+                            <p class="mb-1 fw-bold"><i class="fas fa-brain text-info me-2"></i> Cambios Psicológicos</p>
+                            <ul class="list-unstyled small">
+<li><i class="fas fa-circle text-info me-2 icon-sm"></i> Aumento de la autoestima y la constancia</li>
+<li><i class="fas fa-circle text-info me-2 icon-sm"></i> Sensación de logro personal</li>
+<li><i class="fas fa-circle text-info me-2 icon-sm"></i> Mejor manejo del estrés y la ansiedad</li>
+                            </ul>
+                        </div>
+                        <!-- Más timelines de semanas aquí -->
+                    </div>
+                </div>
+
+                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" id="progreso-fuerza" role="tabpanel" aria-labelledby="fuerza-tab">
+                    <div class="card bg-secondary mb-4 p-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-yoga text-primary me-2 fa-lg"></i>
+                            <h6 class="mb-0">Fuerza</h6>
+                        </div>
+                        <p class="text-primary">Timeline de progreso y cambios esperados</p>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h6 class="mb-0">1-2 semanas</h6>
+                                <span class="badge bg-dark">1-2 semanas</span>
+                            </div>
+                            <p class="mb-1 fw-bold"><i class="fas fa-chart-line text-primary me-2"></i> Cambios Físicos</p>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Adaptación muscular inicial</li>
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Mejora en la coordinación y técnica de los ejercicios</li>
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Ligera ganancia de fuerza</li>
+                            </ul>
+                            <p class="mb-1 fw-bold"><i class="fas fa-brain text-info me-2"></i> Cambios Psicológicos</p>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-circle text-info me-2 icon-sm"></i> Mayor motivación y enfoque en la meta</li>
+                                <li><i class="fas fa-circle text-info me-2 icon-sm"></i> Disminución del miedo al fallo</li>
+                                <li><i class="fas fa-circle text-info me-2 icon-sm"></i> Interés creciente por mejorar la alimentación</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h6 class="mb-0">4-6 semanas</h6>
+                                <span class="badge bg-dark">4-6 semanas</span>
+                            </div>
+                            <p class="mb-1 fw-bold"><i class="fas fa-chart-line text-primary me-2"></i> Cambios Físicos</p>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Incremento de la masa muscular y tono corporal</li>
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Aumento de la fuerza máxima en ejercicios básicos</li>
+                                <li><i class="fas fa-circle text-primary me-2 icon-sm"></i> Mejor recuperación post-entrenamiento</li>
+                            </ul>
+                            <p class="mb-1 fw-bold"><i class="fas fa-brain text-info me-2"></i> Cambios Psicológicos</p>
+                            <ul class="list-unstyled small">
+<li><i class="fas fa-circle text-info me-2 icon-sm"></i> Sensación de superación constante</li>
+<li><i class="fas fa-circle text-info me-2 icon-sm"></i> Mayor disciplina y control mental</li>
+<li><i class="fas fa-circle text-info me-2 icon-sm"></i> Aumento de la confianza corporal</li>
+                            </ul>
+                        </div>
+                        <!-- Más timelines de semanas aquí -->
+                    </div>
+                </div>
+
+
+            <div class="card bg-secondary mb-4 p-3">
+                <h6 class="mb-1"><i class="fas fa-heartbeat text-danger me-2"></i> Beneficios para la Salud a Largo Plazo</h6>
+                <ul class="list-unstyled small mt-2">
+                    <li><i class="fas fa-circle text-danger me-2 icon-sm"></i> Mejor sistema inmunológico</li>
+                    <li><i class="fas fa-circle text-danger me-2 icon-sm"></i> Mayor longevidad y calidad de vida</li>
+                    <li><i class="fas fa-circle text-danger me-2 icon-sm"></i> Mejor postura corporal</li>
+                    <li><i class="fas fa-circle text-danger me-2 icon-sm"></i> Reducción del riesgo de enfermedades crónicas</li>
+                    <li><i class="fas fa-circle text-danger me-2 icon-sm"></i> Mayor energía y vitalidad</li>
+                </ul>
+            </div>
+
+            <div class="card bg-secondary mb-4 p-3">
+                <h6 class="mb-1"><i class="fas fa-brain text-info me-2"></i> Beneficios Psicológicos Universales</h6>
+                <ul class="list-unstyled small mt-2">
+                    <li><i class="fas fa-circle text-info me-2 icon-sm"></i> Reducción significativa de depresión y ansiedad</li>
+                    <li><i class="fas fa-circle text-info me-2" style="font-size: 0.5em;"></i> Mejor función cognitiva y memoria</li>
+                    <li><i class="fas fa-circle text-info me-2" style="font-size: 0.5em;"></i> Mayor autoestima y confianza</li>
+                    <li><i class="fas fa-circle text-info me-2" style="font-size: 0.5em;"></i> Mejor manejo del estrés</li>
+                    <li><i class="fas fa-circle text-info me-2" style="font-size: 0.5em;"></i> Sensación general de bienestar</li>
+                </ul>
+            </div>
+
+            <div class="card bg-secondary mb-4 p-3">
+                <h6 class="mb-1"><i class="fas fa-exclamation-triangle text-warning me-2"></i> Notas Importantes</h6>
+                <ul class="list-unstyled small mt-2">
+                    <li><i class="fas fa-circle text-warning me-2" style="font-size: 0.5em;"></i> Los resultados pueden variar según la genética, nutrición y constancia</li>
+                    <li><i class="fas fa-circle text-warning me-2" style="font-size: 0.5em;"></i> La consistencia es más importante que la intensidad</li>
+                    <li><i class="fas fa-circle text-warning me-2" style="font-size: 0.5em;"></i> Combinar ejercicio con buena alimentación potencia los resultados</li>
+                    <li><i class="fas fa-circle text-warning me-2" style="font-size: 0.5em;"></i> Los beneficios psicológicos suelen aparecer antes que los físicos</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <!-- Navbar Inferior (para móvil) -->
+    <nav class="navbar navbar-expand fixed-bottom navbar-dark bg-dark d-md-none">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav-justified w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home d-block mb-1"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="objetivos.html"><i class="fas fa-bullseye d-block mb-1"></i> Objetivos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="progreso.html"><i class="fas fa-chart-line d-block mb-1"></i> Progreso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deportes.html"><i class="fas fa-running d-block mb-1"></i> Deportes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="perfil.html"><i class="fas fa-user d-block mb-1"></i> Perfil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS y dependencias (Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

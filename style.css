@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e !important; /* Fondo oscuro */
+    color: #e0e0e0 !important; /* Texto claro */
+}
+
+/* Estilos para el navbar inferior */
+.navbar-nav .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem; /* Tamaño de fuente más pequeño para móvil */
+    padding: 0.5rem 0.25rem;
+    color: #888; /* Color de icono y texto por defecto */
+}
+
+.navbar-nav .nav-link.active {
+    color: #007bff; /* Color activo */
+}
+
+.navbar-nav .nav-link i {
+    font-size: 1.2rem; /* Tamaño del icono */
+    margin-bottom: 0.2rem;
+}
+
+/* Ajustes generales de cartas y elementos */
+.card {
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    border-radius: 0.75rem;
+}
+
+.card.bg-secondary {
+    color: white;
+}
+
+.bg-secondary {
+    background-color: #2a2a4a !important; /* Un tono de gris/azul más oscuro para las cartas */
+}
+
+.bg-dark {
+    background-color: #1a1a2e !important; /* Fondo principal */
+}
+
+.bg-black {
+    background-color: #000000 !important;
+}
+
+/* Estilo para las listas dentro de las cards (Ej: objetivos, progreso) */
+.list-group-item {
+    background-color: transparent !important; /* Elimina el fondo de los items para usar el de la card */
+    border: none;
+    padding: 0.75rem 1rem;
+}
+
+.list-group-item.bg-dark {
+    background-color: #1f1f3f !important; /* Fondo más oscuro para items seleccionables */
+}
+
+
+/* Estilos para los pills (ej. en la pestaña de progreso) */
+.nav-pills .nav-link {
+    color: #e0e0e0;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+    margin: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Pequeño ajuste para iconos en listas */
+.list-unstyled li i {
+    vertical-align: middle;
+}
+
+.btn-circle-sm {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.icon-sm {
+    font-size: 0.5em;
+}
+
+.progress-sm {
+    height: 8px;
+}
+
+
+/* Estilos para cartas seleccionadas */
+.level-card.selected,
+.objective-card.selected,
+.secondary-objective-card.selected,
+.sport-card.selected {
+    border: 2px solid #007bff !important;
+    background-color: #003d7a !important; /* Un azul más oscuro para destacar */
+}
+
+/* Media queries para responsividad */
+@media (min-width: 768px) {
+    /* Ocultar la navbar inferior en pantallas más grandes si no es deseada */
+    .fixed-bottom {
+        display: none !important;
+    }
+
+    /* Ajustar el padding para compensar el navbar inferior que no existe */
+    main {
+        padding-bottom: 1rem !important;
+    }
+}

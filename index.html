@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendix - App Fitness</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-dark text-white">
+    <div class="container-fluid p-0">
+        <!-- Navbar Inferior (para móvil) -->
+        <nav class="navbar navbar-expand fixed-bottom navbar-dark bg-dark d-md-none">
+            <div class="container-fluid">
+                <ul class="navbar-nav nav-justified w-100">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="fas fa-home d-block mb-1"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="objetivos.html"><i class="fas fa-bullseye d-block mb-1"></i> Objetivos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progreso.html"><i class="fas fa-chart-line d-block mb-1"></i> Progreso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="deportes.html"><i class="fas fa-running d-block mb-1"></i> Deportes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html"><i class="fas fa-user d-block mb-1"></i> Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <div class="tab-content">
+            <!-- Inicio Tab -->
+            <div class="tab-pane fade show active" id="home">
+                <header class="p-3 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                    </div>
+                    <section style="text-align: center;">
+                        <img style="width: 180px; height: 180px;" src="img/logo-slogan (2).png" alt="">
+                        </section>
+                    <i class="fas fa-sun"></i>
+                </header>
+
+                <main class="p-3 pb-5">
+                    <div class="card bg-secondary text-white mb-3">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h5 style="margin-top: 100px; text-align: center;" class="card-title">¡Bienvenido de vuelta!</h5>
+                            <p style="text-align:center ;" class="card-text">Sigue entrenando hacia tus objetivos</p>
+                        </div>
+                        <section style="text-align: center;">
+                                <img style="width: 200px; height: 250px;" src="img/file_00000000428c61f58c54b992ff8c5182.png" alt="">
+                            </section>
+
+                    </div>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-6">
+                            <div class="card bg-secondary text-center p-3">
+                                <i class="fas fa-bullseye fa-2x text-success mb-2"></i>
+                                <p class="mb-0 fs-4">24</p>
+                                <small>Entrenamientos</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card bg-secondary text-center p-3">
+                                <i class="fas fa-calendar-alt fa-2x text-success mb-2"></i>
+                                <p class="mb-0 fs-4">12</p>
+                                <small>Días activos</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card bg-secondary text-center p-3">
+                                <i class="fas fa-trophy fa-2x text-warning mb-2"></i>
+                                <p class="mb-0 fs-4">3</p>
+                                <small>Objetivos</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card bg-secondary text-center p-3">
+                                <i class="fas fa-heartbeat fa-2x text-danger mb-2"></i>
+                                <p class="mb-0 fs-4">2.4K</p>
+                                <small>Calorías</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5>Entrenamientos Recientes</h5>
+                    <p class="text-info">Tus últimas sesiones de entrenamiento</p>
+
+                    <ul class="list-group list-group-flush mb-5">
+                        <li class="list-group-item bg-secondary d-flex justify-content-between align-items-center mb-2 rounded">
+                            <div>
+                                <h6 class="mb-0 text-info">Calistenia</h6>
+                                <small class="text-white">45 min</small>
+                            </div>
+                            <span class="badge bg-dark rounded-pill">Hoy</span>
+                        </li>
+                        <li class="list-group-item bg-secondary d-flex justify-content-between align-items-center mb-2 rounded">
+                            <div>
+                                <h6 class="mb-0 text-info">Cardio</h6>
+                                <small class="text-white">30 min</small>
+                            </div>
+                            <span class="badge bg-dark rounded-pill">Ayer</span>
+                        </li>
+                        <li class="list-group-item bg-secondary d-flex justify-content-between align-items-center mb-2 rounded">
+                            <div>
+                                <h6 class="mb-0 text-info">Modelo Canvas</h6>
+                                <small class="text-white">Herramienta de planificación</small>
+                            </div>
+                            <a href="Modelo_Canvas/index.html" class="btn btn-primary">Ir</a>
+                        </li>
+                        <!-- Más entrenamientos aquí -->
+                    </ul>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y dependencias (Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

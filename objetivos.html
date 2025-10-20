@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendix - Objetivos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-dark text-white">
+    <div class="container-fluid p-0">
+        <header class="p-3 text-center">
+            <div class="d-flex align-items-center justify-content-center">
+                <i class="fas fa-bullseye text-primary me-2"></i>
+                <h5 class="mb-0 fw-bold text-primary">Rendix</h5>
+            </div>
+            <p class="text-white mb-0">Tus objetivos fitness personalizados</p>
+        </header>
+        <main class="p-3 pb-5">
+            <div class="card bg-secondary mb-4 p-3">
+                <h6 class="text-ligth">Tu Nivel de Experiencia</h6>
+                <p class="text-info">Selecciona tu nivel actual de fitness</p>
+                <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item bg-dark d-flex align-items-center mb-2 rounded level-card" data-level="principiante">
+                        <i class="fas fa-seedling text-success me-3"></i>
+                        <div>
+                            <h6 class="mb-0 text-white">Principiante</h6>
+                            <small class="text-white">0-6 meses de experiencia</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item bg-dark d-flex align-items-center mb-2 rounded level-card" data-level="intermedio">
+                        <i class="fas fa-hand-fist text-primary me-3"></i>
+                        <div>
+                            <h6 class="mb-0 text-white">Intermedio</h6>
+                            <small class="text-white">6 meses - 2 años</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item bg-dark d-flex align-items-center mb-2 rounded level-card" data-level="avanzado">
+                        <i class="fas fa-trophy text-warning me-3"></i>
+                        <div>
+                            <h6 class="mb-0 text-white">Avanzado</h6>
+                            <small class="text-white">Más de 2 años</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card bg-secondary mb-4 p-3">
+                <h6>Objetivo Principal</h6>
+                <p class="text-info">¿Cuál es tu meta principal?</p>
+                <div class="row g-2 mt-2">
+                    <div class="col-6">
+                        <div class="card bg-dark text-center p-3 objective-card" data-objective="perder-peso">
+                            <i class="fas fa-balance-scale fa-2x text-info mb-2"></i>
+                            <p class="mb-0 text-white">Perder Peso</p>
+                            <small class="text-white">Reducir grasa corporal</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark text-center p-3 objective-card" data-objective="ganar-musculo">
+                            <i class="fas fa-dumbbell fa-2x text-primary mb-2"></i>
+                            <p class="mb-0 text-white">Ganar Músculo</p>
+                            <small class="text-white">Aumentar masa muscular</small>
+                        </div>
+                    </div>
+                     <div class="col-6">
+                        <div class="card bg-dark text-center p-3 objective-card" data-objective="mejorar-resistencia">
+                            <i class="fas fa-running fa-2x text-success mb-2"></i>
+                            <p class="mb-0 text-white">Mejorar Resistencia</p>
+                            <small class="text-white">Cardio y resistencia</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-dark text-center p-3 objective-card" data-objective="tonificar">
+                            <i class="fas fa-fire fa-2x text-warning mb-2"></i>
+                            <p class="mb-0 text-white">Tonificar</p>
+                            <small class="text-white">Definir músculos</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-secondary mb-4 p-3">
+                <h6>Objetivos Secundarios</h6>
+                <p class="text-white">Selecciona objetivos adicionales (opcional)</p>
+                <div class="row g-2 mt-2">
+                    <div class="col-4">
+                        <div class="card bg-dark text-center p-2 secondary-objective-card" data-objective-secondary="flexibilidad">
+                            <i class="fas fa-yoga fa-lg text-info mb-1"></i>
+                            <small class="mb-0 text-white">Flexibilidad</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-center p-2 secondary-objective-card" data-objective-secondary="fuerza-funcional">
+                            <i class="fas fa-bolt fa-lg text-warning mb-1"></i>
+                            <small class="mb-0 text-white">Fuerza Funcional</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-center p-2 secondary-objective-card" data-objective-secondary="equilibrio">
+                            <i class="fas fa-balance-scale-left fa-lg text-primary mb-1"></i>
+                            <small class="mb-0 text-white">Equilibrio</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-center p-2 secondary-objective-card" data-objective-secondary="mejorar-postura">
+                            <i class="fas fa-user-friends fa-lg text-success mb-1"></i>
+                            <small class="mb-0 text-white">Mejorar Postura</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-center p-2 secondary-objective-card" data-objective-secondary="mas-energia">
+                            <i class="fas fa-charging-station fa-lg text-danger mb-1"></i>
+                            <small class="mb-0 text-white">Más Energía</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-center p-2 secondary-objective-card" data-objective-secondary="reducir-estres">
+                            <i class="fas fa-cloud-sun fa-lg text-info mb-1"></i>
+                            <small class="mb-0 text-white">Reducir Estrés</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-secondary mb-4 p-3">
+                <h6>Progreso Actual</h6>
+                <p class="text-white">Tus objetivos en curso</p>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <small>Entrenar 4 veces por semana</small>
+                        <small>75%</small>
+                    </div>
+                    <div class="progress bg-dark progress-sm">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="d-flex justify-content-between text-muted small mt-1">
+                        <span style="color: rgb(94, 142, 196);">Actual: 3 sesiones</span>
+                        <span style="color: rgb(94, 142, 196);">Meta: 4 sesiones</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <small>Perder 5kg en 3 meses</small>
+                        <small>40%</small>
+                    </div>
+                    <div class="progress bg-dark progress-sm">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="d-flex justify-content-between text-muted small mt-1">
+                        <span style="color: rgb(94, 142, 196);">Actual: 2kg perdidos</span>
+                        <span style="color: rgb(94, 142, 196);">Meta: 5kg</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <small>Hacer 20 flexiones seguidas</small>
+                        <small>60%</small>
+                    </div>
+                    <div class="progress bg-dark progress-sm">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="d-flex justify-content-between text-muted small mt-1">
+                        <span style="color: rgb(94, 142, 196);">Actual: 12 flexiones</span>
+                        <span style="color: rgb(94, 142, 196);">Meta: 20 flexiones</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary btn-lg d-flex align-items-center justify-content-center" id="newObjectiveBtn">
+                    <i class="fas fa-bullseye me-2"></i> Establecer Nuevo Objetivo
+                </button>
+                <button class="btn btn-outline-light btn-lg d-flex align-items-center justify-content-center" id="historyBtn">
+                    <i class="fas fa-calendar-alt me-2"></i> Ver Historial de Progreso
+                </button>
+            </div>
+        </main>
+    </div>
+    <div>
+        <section>
+            <p>.</p>
+        </section>
+    </div>
+
+    <!-- Navbar Inferior (para móvil) -->
+    <nav class="navbar navbar-expand fixed-bottom navbar-dark bg-dark d-md-none">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav-justified w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home d-block mb-1"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="objetivos.html"><i class="fas fa-bullseye d-block mb-1"></i> Objetivos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progreso.html"><i class="fas fa-chart-line d-block mb-1"></i> Progreso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deportes.html"><i class="fas fa-running d-block mb-1"></i> Deportes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="perfil.html"><i class="fas fa-user d-block mb-1"></i> Perfil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modals -->
+    <!-- New Objective Modal -->
+    <div class="modal fade" id="newObjectiveModal" tabindex="-1" aria-labelledby="newObjectiveModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newObjectiveModalLabel">Establecer Nuevo Objetivo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="newObjectiveForm">
+                        <div class="mb-3">
+                            <label for="objectiveName" class="form-label">Nombre del Objetivo</label>
+                            <input type="text" class="form-control bg-secondary text-white" id="objectiveName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="objectiveDescription" class="form-label">Descripción</label>
+                            <textarea class="form-control bg-secondary text-white" id="objectiveDescription" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="objectiveTarget" class="form-label">Valor Objetivo (ej. 5kg, 20 flexiones)</label>
+                            <input type="text" class="form-control bg-secondary text-white" id="objectiveTarget">
+                        </div>
+                        <div class="mb-3">
+                            <label for="objectiveDeadline" class="form-label">Fecha Límite</label>
+                            <input type="date" class="form-control bg-secondary text-white" id="objectiveDeadline">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="saveObjectiveBtn">Guardar Objetivo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- History Modal -->
+    <div class="modal fade" id="historyModal" tabindex="-1" aria-labelledby="historyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="historyModalLabel">Historial de Progreso</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="historyContent">
+                        <!-- History will be loaded here -->
+                        <p class="text-center text-muted">No hay historial disponible aún.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y dependencias (Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
