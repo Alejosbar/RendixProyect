@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 {
                     sport: 'Calistenia',
                     level: 'Altamente recomendado',
-                    desc: 'Perfectoweww para principiantes que buscan tonificar'
+                    desc: 'Perfecto para principiantes que buscan tonificar'
                 },
                 {
                     sport: 'Cardio',
